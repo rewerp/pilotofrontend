@@ -1,7 +1,6 @@
 import { useHistory } from 'react-router-dom';
 
-import iconR from '../files/images/iconR.svg';
-import backgroundMain from '../files/images/backgroundMain.jpg';
+import controllerIcon from '../files/images/controllerIcon.svg';
  
 import '../styles/home.scss';
 
@@ -13,28 +12,26 @@ export function Home() {
    }
 
    return (
-      <div id="page-home">
-         <img src={backgroundMain} alt="Imagem de fundo" />
-         <div className="login">
-            <main>
-               <div className="home-principal">
-                  <div>
-                     <img src={iconR} alt="Logo do aplicativo" />
-                     <h1>
-                        Entrar
-                     </h1>
-                  </div>
-                  <form>
-                     <input type="text" placeholder="Email ou nome de usuário" />
-                     <input type="text" placeholder="Senha" />
-                  </form>
-                  <button type="submit" onClick={handleProfileManager}>Entrar</button>
-                  <div>
-      
-                  </div>
-               </div>
-            </main>
-         </div>
+      <div id="main">
+         <main className="login">
+            <div>
+               <img src={controllerIcon} alt="Logo do aplicativo" />
+               <h1>
+                  Entrar
+               </h1>
+            </div>
+            <form>
+               <input type="text" placeholder="Email ou nome de usuário" />
+               <input type="text" placeholder="Senha" />
+               <button type="submit" onClick={handleProfileManager}>Entrar</button>
+            </form>
+            <span>
+               Lembre-se de mim
+            </span>
+            <div>
+               Novo por aqui? Cadastre-se.
+            </div>
+         </main>
       </div>
    )
 }
