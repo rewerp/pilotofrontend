@@ -32,7 +32,6 @@ body {
          h1 {
             color: #FFFFFF;
             font-style: bold;
-            font-family: 'Roboto';
          }
       }
 
@@ -42,7 +41,13 @@ body {
          input {
             width: 100%;
             margin-bottom: 20px;
-            border: 0;
+            border-top: 0px;
+            border-left: 0px;
+            border-right: 0px;
+            border-bottom: 4px;
+            border-color: #FFFFFF;
+            background: transparent;
+            color: #FFFFFF;
          }
 
          button {
@@ -50,7 +55,8 @@ body {
             background: #011675;
             color: #FFFFFF;
             cursor: pointer;
-            margin-top: 20px;;
+            margin-top: 20px;
+            border-radius: 10px;
 
             &:hover {
                filter: brightness(0.8);
@@ -60,13 +66,13 @@ body {
          button, input {
             height: 50px;
             width: 100%;   
-            border-radius: 10px;
             font-size: 18px;            
          }
       }
 
       span {
          padding: 20px;
+         color: #FFFFFF;
       }
 
    }

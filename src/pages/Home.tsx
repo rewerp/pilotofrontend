@@ -22,15 +22,16 @@ export function Home() {
             </div>
             <form>
                <input type="text" placeholder="Email ou nome de usuário" />
-               <input type="text" placeholder="Senha" />
+               <input type="password" placeholder="Senha" />
                <button type="submit" onClick={handleProfileManager}>Entrar</button>
             </form>
             <span>
                Lembre-se de mim
             </span>
-            <div>
-               Novo por aqui? Cadastre-se.
-            </div>
+            <span>
+               Novo por aqui? 
+               <>Cadastre-se</>
+            </span>
          </main>
       </div>
    )
