@@ -1,3 +1,4 @@
+import React, { Component } from 'react';
 import { useHistory } from 'react-router-dom';
 
 import controllerIcon from '../files/images/controllerIcon.svg';
@@ -25,13 +26,12 @@ export function Home() {
                <input type="password" placeholder="Senha" />
                <button type="submit" onClick={handleProfileManager}>Entrar</button>
             </form>
-            <span>
-               Lembre-se de mim
-            </span>
-            <span>
-               Novo por aqui? 
-               <>Cadastre-se</>
-            </span>
+            <a className="reminderMe">
+               <input type="checkbox" />
+               <span>
+                  Lembre-se de mim
+               </span>
+            </a>
          </main>
       </div>
    )
